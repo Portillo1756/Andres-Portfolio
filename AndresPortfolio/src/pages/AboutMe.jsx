@@ -1,4 +1,4 @@
-import Header from "../component/Header";
+// import Header from "../component/Header";
 import HeroSection from "./HeroSection";
 
 
@@ -7,7 +7,7 @@ function AboutMe() {
 
     return (
         <>
-            <Header/>
+            {/* <Header/> */}
             <HeroSection />
             <section id="AboutMe" className="about--section">
                 <div className="hero--section--content--box about--section--box">

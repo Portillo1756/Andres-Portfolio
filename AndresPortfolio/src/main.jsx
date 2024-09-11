@@ -5,6 +5,7 @@ import App from './App.jsx'
 import './index.css'
 import AboutMe from './pages/AboutMe.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
+import ContactMe from './pages/ContactMe.jsx';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -25,10 +26,10 @@ const router = createBrowserRouter([
       //   path: '/Blog',
       //   element: <Blog />,
       // },
-      // {
-      //   path: '/contact',
-      //   element: <ContactMe />,
-      // },
+      {
+        path: '/Contact',
+        element: <ContactMe />,
+      },
     ],
   },
 ]);

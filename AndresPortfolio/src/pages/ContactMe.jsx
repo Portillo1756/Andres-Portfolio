@@ -10,14 +10,85 @@ export default function ContactMe() {
             setShowEmail (true)
         }
     }
+
+    function handlePhoneNumber() { 
+        if (showPhoneNumber){ 
+            setShowPhoneNumber(false)
+        } else {
+            setShowPhoneNumber (true)
+        }
+    }
+
     return (
-        <section id="ContactMe" className="ContactMe">
-            <div className="hero--section--content--box">
-                <div className="hero--section--content">
-                    <button className="Email">Email</button>
-                    <button className="Phone">Phone Number</button>
-                </div>
+        <section id="ContactMe" className="contact--section">
+            <div>
+                <p className="sub-title"> Lets Talk </p>
+                    <button onClick= {handleEmail} className="Email">{showEmail?"portillo_andres17@yahoo.com":"Email"}</button>
+                    <button onClick={handlePhoneNumber} className="Phone">{showPhoneNumber?"8185845839":"Phone Number"}</button>
+                    <button className="GitHub"><a href="https://github.com/Portillo1756">Check My GitHub</a></button>
+                    <button className="Linkedin"><a href="https://www.linkedin.com/in/portillo1756/">Linkedin</a></button>
             </div>
+            <form className="contact--form--container">
+                <div className="container">
+                    <label htmlFor="first-name" className="contact--label">
+                        <span className="text-md">First Name</span>
+                        <input type="text" 
+                        className="contact--input text-md" 
+                        name="first-name"
+                        id="first-name"
+                        required />
+                    </label>
+                    <label htmlFor="last-name" className="contact--label">
+                        <span className="text-md">Last Name</span>
+                        <input type="text" 
+                        className="contact--input text-md" 
+                        name="last-name"
+                        id="last-name"
+                        required />
+                    </label>
+                    <label htmlFor="email" className="contact--label">
+                        <span className="text-md">Email</span>
+                        <input type="email" 
+                        className="contact--input text-md" 
+                        name="email"
+                        id="email"
+                        required />
+                    </label>
+                    <label htmlFor="phone-number" className="contact--label">
+                        <span className="text-md">Phone Number</span>
+                        <input type="number" 
+                        className="contact--input text-md" 
+                        name="phone-number"
+                        id="phone-number"
+                        required />
+                    </label>
+                </div>
+                <label htmlFor="choose-topic" className="contact--label">
+                        <span className="text-md">Choose a Topic</span>
+                        <select id="choose-topic" className="contact-input text-md">
+                            <option>Select One...</option>
+                            <option>Item 1</option>
+                            <option>Item 2</option>
+                            <option>Item 3</option>
+                        </select>
+                </label>
+                <label htmlFor="message" className="contact--label">
+                        <span className="text-md">Message</span>
+                        <textarea 
+                            className="contact--input text-md" 
+                            id="message"
+                            rows="8"
+                            placeholder="Type your message..." 
+                        />
+                </label>
+                <label htmlFor="checkbox" className="checkbox--label">
+                    <input type="checkbox" required name="checkbox" id="checkbox" />
+                    <span className="text-sm">I accept the terms.</span>
+                </label>
+                <div>
+                    <button className="btn btn-primary conctact--form--btn">Summit</button>
+                </div>
+            </form>
         </section>
     );
 }
