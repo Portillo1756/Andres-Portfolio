@@ -259,3 +259,15 @@ h3 {
   height: 100%;
 }
 /* Hero section style end */
+
+/* About Me */
+.about--section {
+  display: grid;
+  padding: 133.3px 85.3px;
+  align-items: center;
+  gap: 114.6px;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* About Me End */
+
+/* My Portfolio Start */
