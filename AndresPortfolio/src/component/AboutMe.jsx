@@ -1,14 +1,9 @@
 // import Header from "../component/Header";
-import HeroSection from "./HeroSection";
-
-
 
 function AboutMe() {
 
     return (
         <>
-            {/* <Header/> */}
-            <HeroSection />
             <section id="AboutMe" className="about--section">
                 <div className="hero--section--content--box about--section--box">
                     <div className="hero--section--content">

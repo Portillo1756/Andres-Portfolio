@@ -22,14 +22,20 @@ export default function ContactMe() {
     return (
         <section id="ContactMe" className="contact--section">
             <div>
-                <h1 className="sub-title"> Lets Talk!!! </h1>
-                    <button onClick= {handleEmail} className="Email">{showEmail?"portillo_andres17@yahoo.com":"Email"}</button>
-                    <button onClick={handlePhoneNumber} className="Phone">{showPhoneNumber?"(818) 584-5839":"Phone Number"}</button>
+                <h1 className="sub-title">Lets Talk!!!</h1>     
+            </div>
+            <div className="buttonContainer">
+                <div className="emailContainer">
+                <button onClick= {handleEmail} className="Email">{showEmail?"portillo_andres17@yahoo.com":"Email"}</button>
+                </div>
+                <div className="numberContainer">
+                <button onClick={handlePhoneNumber} className="Phone">{showPhoneNumber?"(818) 584-5839":"Phone Number"}</button>
+                </div>
             </div>
             <form className="contact--form--container">
                 <div className="container">
                     <label htmlFor="first-name" className="contact--label">
-                        <span className="text-md">First Name</span>
+                        <span className="text-md">First Name:</span>
                         <input type="text" 
                         className="contact--input text-md" 
                         name="first-name"
@@ -37,7 +43,7 @@ export default function ContactMe() {
                         required />
                     </label>
                     <label htmlFor="last-name" className="contact--label">
-                        <span className="text-md">Last Name</span>
+                        <span className="text-md">Last Name:</span>
                         <input type="text" 
                         className="contact--input text-md" 
                         name="last-name"
@@ -45,7 +51,7 @@ export default function ContactMe() {
                         required />
                     </label>
                     <label htmlFor="email" className="contact--label">
-                        <span className="text-md">Email</span>
+                        <span className="text-md">Email:</span>
                         <input type="email" 
                         className="contact--input text-md" 
                         name="email"
@@ -53,7 +59,7 @@ export default function ContactMe() {
                         required />
                     </label>
                     <label htmlFor="phone-number" className="contact--label">
-                        <span className="text-md">Phone Number</span>
+                        <span className="text-md">Phone Number:</span>
                         <input type="number" 
                         className="contact--input text-md" 
                         name="phone-number"
@@ -62,7 +68,7 @@ export default function ContactMe() {
                     </label>
                 </div>
                 <label htmlFor="message" className="contact--label">
-                        <span className="text-md">Message</span>
+                        <span className="text-md">Message:</span>
                         <textarea 
                             className="contact--input text-md" 
                             id="message"

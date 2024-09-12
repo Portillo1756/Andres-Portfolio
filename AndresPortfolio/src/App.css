@@ -293,6 +293,23 @@ h3 {
   display: flex;
   justify-content: center;
   color: var(--brown);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+  .Email, 
+  .Phone {
+    background-color: var(--brown);
+    color: var(--primary);
+    font-weight: bold;
+    font-style: italic;
+  }
+.buttonContainer {
+  display:flex;
+  gap: 50%;
+}
+
+.Phone {
+  width: 150px;
 }
 
 .contact--section {
@@ -301,16 +318,8 @@ h3 {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   text-align: center;
    gap: 64px;
    background-color: var(--primary);
-  }
-  
-  .Email, 
-  .Phone {
-    column-gap: 20px 100px;
-    background-color: var(--secondary);
-    color: var(--red);
   }
 
   .contact--form--container {
@@ -366,10 +375,11 @@ h3 {
   }
 
   .summit-btn {
-    background-color: var(--red);
+    background-color: var(--black);
     color: #ffffff;
     font-size: larger;
     font-weight: bold;
+    justify-content: center;
   }
   /* Contact Me End */
 
@@ -390,6 +400,7 @@ h3 {
     display: flex;
     list-style: none;
     justify-content: center;
+    
     gap: 10em;
   }
 
@@ -397,5 +408,9 @@ h3 {
   .Linkedin {
     flex: center;
     background-color: var(--primary);
+  }
 
+  .icon-container {
+    display: flex;
+    align-items: center;
   }

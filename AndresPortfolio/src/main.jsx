@@ -3,10 +3,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import AboutMe from './pages/AboutMe.jsx';
-import ErrorPage from './pages/ErrorPage.jsx';
-import ContactMe from './pages/ContactMe.jsx';
-import Resume from './pages/Resume.jsx';
+import AboutMe from './component/AboutMe.jsx';
+import ErrorPage from './component/ErrorPage.jsx';
+import ContactMe from './assets/ContactMe.jsx';
+import Resume from './component/Resume.jsx';
+import HomePage from './pages/HomePage.jsx';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -17,12 +18,12 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
+        element: <HomePage />,
+      },
+      {
+        path: '/AboutMe',
         element: <AboutMe />,
       },
-      // {
-      //   path: '/About',
-      //   element: <AboutMe />,
-      // },
       {
         path: '/Contact',
         element: <ContactMe />,
