@@ -46,7 +46,10 @@ function Navbar() {
                         <Link to="/AboutMe" className="navbar--content">About Me</Link>
                     </li>
                     <li>
-                        <Link to="/Contact"> Contact Mek </Link>
+                        <Link to="/Resume" className="navbar--content">Resume</Link>
+                    </li>
+                    <li>
+                        <Link to="/Contact" className="navbar--content">Contact Me</Link>
                     </li>
                 </ul>
             </div>

@@ -12,7 +12,7 @@ function AboutMe() {
             <section id="AboutMe" className="about--section">
                 <div className="hero--section--content--box about--section--box">
                     <div className="hero--section--content">
-                        <p className="section--title">About</p>
+                        <p className="section--title">About Me:</p>
                             <p>
                                 Hello Web People!!! My name is Andres Portillo. I'm a thrity year old, who
                                 is married and I want to introduce myself to you guys. I have work as an 

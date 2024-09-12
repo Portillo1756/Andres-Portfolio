@@ -22,11 +22,9 @@ export default function ContactMe() {
     return (
         <section id="ContactMe" className="contact--section">
             <div>
-                <p className="sub-title"> Lets Talk </p>
+                <h1 className="sub-title"> Lets Talk!!! </h1>
                     <button onClick= {handleEmail} className="Email">{showEmail?"portillo_andres17@yahoo.com":"Email"}</button>
-                    <button onClick={handlePhoneNumber} className="Phone">{showPhoneNumber?"8185845839":"Phone Number"}</button>
-                    <button className="GitHub"><a href="https://github.com/Portillo1756">Check My GitHub</a></button>
-                    <button className="Linkedin"><a href="https://www.linkedin.com/in/portillo1756/">Linkedin</a></button>
+                    <button onClick={handlePhoneNumber} className="Phone">{showPhoneNumber?"(818) 584-5839":"Phone Number"}</button>
             </div>
             <form className="contact--form--container">
                 <div className="container">
@@ -63,15 +61,6 @@ export default function ContactMe() {
                         required />
                     </label>
                 </div>
-                <label htmlFor="choose-topic" className="contact--label">
-                        <span className="text-md">Choose a Topic</span>
-                        <select id="choose-topic" className="contact-input text-md">
-                            <option>Select One...</option>
-                            <option>Item 1</option>
-                            <option>Item 2</option>
-                            <option>Item 3</option>
-                        </select>
-                </label>
                 <label htmlFor="message" className="contact--label">
                         <span className="text-md">Message</span>
                         <textarea 
@@ -86,7 +75,7 @@ export default function ContactMe() {
                     <span className="text-sm">I accept the terms.</span>
                 </label>
                 <div>
-                    <button className="btn btn-primary conctact--form--btn">Summit</button>
+                    <button className="summit-btn">SUMMIT</button>
                 </div>
             </form>
         </section>

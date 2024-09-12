@@ -17,13 +17,16 @@ p {
 }
 
 :root {
-  --primary: #ff0000;
+  --primary: #4169E1;
+  --secondary: #f0e68c;
   --heading-color: #800000;
   --bg-shade: #f5fcff;
-  --github: #ffd700;
   --darkblue: #1c1e53;
   --black: #000000;
   --white: #ffffff;
+  --red: #ff0000;
+  --green: #008000;
+  --brown: #f4a460;
 }
 
 .btn {
@@ -114,25 +117,25 @@ h3 {
 /* Paragraph text large, medium, small */
 /* Body 1*/
 .text-lg {
-  color: var(--darkblue);
+  color: var(--brown);
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 27px;
 }
 
 /* Body 2*/
 .text-md {
-  color: var(--darkblue);
+  color: var(--brown);
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 24px;
 }
 
 /* Body 3*/
 .text-sm {
-  color: var(--black);
+  color: var(--brown);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -140,17 +143,8 @@ h3 {
 }
 
 /* Section Title */
-/* Skills & About Ne */
-.section--title {
-  color: var(--heading-color);
-  font-size: 21px;
-  text-align: center;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 32px;
-  display: flex;
-  align-items: flex-start;
-}
+/* Skills & About Me */
+
 
 /* Porfolio, Testimonial, and Contact Me */
 .sub--title {
@@ -189,10 +183,10 @@ h3 {
 
 /* Navbar Content */
 .navbar--content {
-  color: var(--darkblue);
-  font-size: 16px;
+  color: var(--red);
+  font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 24px;
   cursor: pointer;
 }
@@ -210,7 +204,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  background-color: var(--bg-shade);
+  background-color: var(--primary);
 }
 
 .hero--section--content-box {
@@ -232,22 +226,33 @@ h3 {
 }
 
 .hero--section--title {
-  color: var(--heading-color);
+  color: var(--brown);
   font-size: 74.667px;
   font-weight: 700;
   line-height: 90px;
   align-self: stretch;
 }
 
-.hero--section--title-color {
-  color: var(--primary);
+.hero--title {
+  color: var(--secondary);
+  font-size: 24px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 10px;
+  display: flex;
+  align-items: flex-start;
 }
 
-.hero--section--description {
-  color: var(--darkblue);
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 36px;
+.hero--description {
+  color: var(--secondary);
+  font-size: 18px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 10px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .hero--section--img {
@@ -265,12 +270,31 @@ h3 {
   display: grid;
   padding: 133.3px 85.3px;
   align-items: center;
-  gap: 114.6px;
+  gap: 20px;
   grid-template-columns: repeat(2, 1fr);
+  background-color: var(--secondary);
+  color: var(--green)
+}
+
+.section--title {
+  color: var(--primary);
+  font-size: 24px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 10px;
+  display: flex;
+  align-items: flex-start;
 }
 /* About Me End */
 
 /* Contact Me */
+.sub-title {
+  display: flex;
+  justify-content: center;
+  color: var(--brown);
+}
+
 .contact--section {
    display: flex;
    padding: 150px 85px;
@@ -279,6 +303,14 @@ h3 {
    align-items: center;
    text-align: center;
    gap: 64px;
+   background-color: var(--primary);
+  }
+  
+  .Email, 
+  .Phone {
+    column-gap: 20px 100px;
+    background-color: var(--secondary);
+    color: var(--red);
   }
 
   .contact--form--container {
@@ -303,4 +335,67 @@ h3 {
     gap: 10.6px;
     flex: 1 0 0;
     width: 100%;
+  }
+
+  .contact--input {
+    display: flex;
+    font-family: "Roboto";
+    padding: 16px;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1.333px solid var(--primary);
+    background: var(--white);
+  }
+
+  .checkbox--label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10.6px;
+    flex: 1 0 0;
+    justify-content: flex-start;
+  }
+
+  input[type="checkbox"] {
+    width: 21px;
+    height: 21px;
+    border: 0.15em solid var(--heading-color);
+    border-radius: 0.15em;
+    transform: translatey(-0.075em);
+  }
+
+  .summit-btn {
+    background-color: var(--red);
+    color: #ffffff;
+    font-size: larger;
+    font-weight: bold;
+  }
+  /* Contact Me End */
+
+  /* Resume Start */
+  .resume--section--content {
+    width: 100vw;
+    height: 800px;
+  }
+  /* Resume Finish */
+
+  /* Footer Start */
+  .footer--container {
+    width: 100vw;
+    height: 75px;
+  }
+
+  .footer--icon {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 10em;
+  }
+
+  .GitHub,
+  .Linkedin {
+    flex: center;
+    background-color: var(--primary);
+
   }

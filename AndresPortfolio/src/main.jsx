@@ -6,6 +6,7 @@ import './index.css'
 import AboutMe from './pages/AboutMe.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import ContactMe from './pages/ContactMe.jsx';
+import Resume from './pages/Resume.jsx';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -18,18 +19,18 @@ const router = createBrowserRouter([
         index: true,
         element: <AboutMe />,
       },
-      {
-        path: '/About',
-        element: <AboutMe />,
-      },
       // {
-      //   path: '/Blog',
-      //   element: <Blog />,
+      //   path: '/About',
+      //   element: <AboutMe />,
       // },
       {
         path: '/Contact',
         element: <ContactMe />,
       },
+      {
+        path: '/Resume',
+        element: <Resume />,
+      }
     ],
   },
 ]);
