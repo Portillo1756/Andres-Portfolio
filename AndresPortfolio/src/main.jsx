@@ -5,7 +5,7 @@ import App from './App.jsx'
 import './index.css'
 import AboutMe from './component/AboutMe.jsx';
 import ErrorPage from './component/ErrorPage.jsx';
-import ContactMe from './assets/ContactMe.jsx';
+import ContactMe from './component/ContactMe.jsx';
 import Resume from './component/Resume.jsx';
 import HomePage from './pages/HomePage.jsx';
 

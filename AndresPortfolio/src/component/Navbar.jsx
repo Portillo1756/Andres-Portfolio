@@ -5,10 +5,6 @@ import { Link } from "react-router-dom";
 function Navbar() {
     const [navActive, setNavActive] = useState (false);
 
-    const toggleNav = () => {
-        setNavActive(!navActive);
-    };
-
     const closeMenu = () => {
         setNavActive(false);
     }

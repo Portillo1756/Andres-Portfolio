@@ -1,5 +1,3 @@
-// import Header from "../component/Header";
-
 function AboutMe() {
 
     return (
@@ -9,25 +7,7 @@ function AboutMe() {
                     <div className="hero--section--content">
                         <p className="section--title">About Me:</p>
                             <p>
-                                Hello Web People!!! My name is Andres Portillo. I'm a thrity year old, who
-                                is married and I want to introduce myself to you guys. I have work as an 
-                                electrician for the pass thirteen years and now I'm looking forward to exploring 
-                                what this side of the internet is all about. I'm someone who enjoy challenges,
-                                Therefore my current and past bosses have been able to rely on me . I don't
-                                like to give up on the first sign of trouble I gotta admit I had lost a few
-                                times but thats the beauty of why I enjoy electrical. It came to the point
-                                where I feel that there is more in me than just doing electrical, That does
-                                not mean im trying to say electrical is easy but it wasn't challeging me 
-                                anymore. Also, I hate being bored at home and not being able to have some
-                                type of challenge throughout my day. I also happen to realized that I enjoy
-                                solving stuff within my brain and thats one of the things most coworker 
-                                didn't had and they would love to tackle project head on and will realize 
-                                mid way they were wrong. I know that I probably didnt get to learn everything
-                                in electrical but I am ready to be able to take on this new challange and 
-                                learn as much as I can. I can promise you that with me around I wont quit 
-                                till we find a solution. I wish i was able to skip this next six month, and
-                                live my best life without any headache but I know everyhting I'm going to
-                                live the next couple of months will be worth it at the end.
+                            Hello Everyone, I am someone who is very extroverted, hard worker, problem solver, persitent, friendly, leader, etc. But you can call me Andres. How you doing? Hope you doing good, thank you for taking the time to read my about me. I am someone how just went back to school and finish school, maybe I am a little older but like many of us I never knew what I wanted to do and settle for an "easy" job. Now i have done electrical work for over ten years plus, and even though I am in a very good spot as an electircian I knew I needed more in my life. I am someone who does not like to settle, someone who demand more to myself, and trust me this is so normal for me. You can easily ask anyone I know  and they could bouch for me and said I am a hard worker. I expect and love to bring the best each day, I love to be transparent and honest to people and mostly I enjoy going home knowing that my job is done "correctly", "beautiful",  "money saver". Yes, I do enjoy saving money to my boss, yes, you can save money in electrical, yes, coworker don't know how to fix stuff, and yes, is my duty to fix it. Do I like it? not really, why do I do it? I learn more, and like I said I love solving problem, No, I don't know everything but I don't like to give up. I would like to get an opportunity in this sector, so far is being challenging but you know that feeling of solving something, that feeling on accompleshment, that feeling you bad a**. That is the feeling that I wanna feel now and I hopping you, or someone you know gives me an opportunity. Might not be the most knowledgeble but i can promise you "You ain't never had a friend like me, ha!" -Genie. 
                             </p>
                     </div>
                 </div>
